@@ -32,6 +32,12 @@ function setData(data) {
 
     //we need to set in the document through dom
     container.insertAdjacentHTML("beforeend", htmlData);
+
+    const topBtn = `<div class="scroll-top">
+      <button class="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>`;
+
+    // container.insertAdjacentElement("afterend", topBtn);
   });
 }
 
@@ -56,3 +62,12 @@ window.addEventListener("scroll", () => {
     showData();
   }
 });
+
+// const topbtn = document.querySelector(".topBtn");
+// topbtn.addEventListener("onclick", () => {
+//   // window.scrollTo({
+//   //   top: 0,
+//   //   behaviour: "smooth",
+//   // });
+//   console.log("Top btn clicked!");
+// });
